@@ -1,0 +1,19 @@
+<body
+  style="background-color: rgb(13, 9, 1); height: 700px; text-align: center"
+>
+  <h1 style="color: rgb(130, 26, 130)">Halloween Party Prep</h1>
+  <h2 style="color: rgb(130, 26, 130)">| Angular Pipe Practice |</h2>
+  <h4 style="color: rgb(22, 200, 22)">Original Decorations List:</h4>
+  <p *ngFor="let item of decorations" style="color: orange">
+    {{ item }}
+  </p>
+  <h4 style="color: rgb(22, 200, 22)">Reversed Decorations List:</h4>
+  <p *ngFor="let item of decorations" style="color: rgb(130, 26, 130)">
+    {{ item | reverse | uppercase }}
+  </p>
+  <h4 style="color: rgb(22, 200, 22)">Original Party Name List:</h4>
+  <p style="color: orange">{{ party.name }}</p>
+  <p *ngFor="let data of party"></p>
+  <h4 style="color: rgb(22, 200, 22)">Sorted Party Name List:</h4>
+  <p style="color: orange">{{ party.name | sort }}</p>
+</body>
